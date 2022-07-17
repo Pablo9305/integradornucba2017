@@ -318,6 +318,16 @@ input:focus {
             border-radius: 10px;
         }
 
+        .productos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top: 4rem;
+            
+        }
+
         .container {
             display: flex;
             flex-direction: column;
@@ -325,7 +335,7 @@ input:focus {
             align-content: center;
             justify-content: center;
             text-align: center;
-            max-width: 450px;
+            max-width: 479px;
             
         }
 
@@ -341,7 +351,6 @@ input:focus {
             align-content: center;
             align-items: center;
             margin-top: 2rem;
-    
             width: 250px;
             background: #d46419;
             border-radius: 10px;
@@ -631,6 +640,16 @@ input:focus {
             border-radius: 10px;
         }
 
+        .productos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top: 4rem;
+            
+        }
+
          .container {
             display: flex;
             flex-direction: column;
@@ -763,14 +782,14 @@ input:focus {
         }
         .nav-menu {
             display: flex;
-            color: red;
+            
             
          
             
         }
         .nav-menu li {
             display: flex;
-            color: greenyellow;
+            
             align-content: right;
             
             margin: 20px 0;
@@ -945,7 +964,7 @@ input:focus {
             justify-content: center;
             text-align: center;
             align-items: center;
-            margin-top: 5rem 5rem;
+            margin-top: 4rem;
             
         }
 
@@ -955,6 +974,7 @@ input:focus {
             justify-content:space-between;
             text-align: center;
             align-items: center;
+            width: 1200px;
             
             
             
@@ -963,7 +983,7 @@ input:focus {
 
 
         .cofres img {
-            width: 40%;
+            width: 70%;
             padding: 1rem;
             
         }
