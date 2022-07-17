@@ -742,7 +742,7 @@ input:focus {
      }
      /**  media desktop **/
 
-     /*@media (min-width: 769px) {
+     @media (min-width: 769px) {
         header {
             height: 150px;
             display: flex;
