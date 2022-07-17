@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0%;
     box-sizing: border-box;
-    border: 1px solid red;
+  
     }
 body{
     font-family: 'MedievalSharp', cursive;
@@ -121,7 +121,7 @@ input:focus {
      
      /** mobile first**/
 
-     @media (max-width: 480px){
+     @media (max-width: 480px) {
 
         .lg{
             width: 100px;
@@ -167,7 +167,7 @@ input:focus {
         .btn-bar{
              color: #d9b988;
              cursor: pointer;
-             /*margin-right: 20px;**/
+             margin-right: 20px;
             }
         .nav-menu li a.active, .nav-menu li a:hover {
             color: #d9b988 ;
@@ -228,14 +228,11 @@ input:focus {
       
         
         .empezar {
-          
             padding: 15px;
             border-radius: 10px;
             border: solid 2px black;
             background:#5f0c0e;
-            color: #d9b988;
-            
-        
+            color: #d9b988;  
         }
 
         h3 { font-size: 40px;
@@ -263,7 +260,7 @@ input:focus {
         }
 
         .elfo {
-            width: 400px;
+            max-width: 380px;
             height: auto;
             border-radius: 10px;
             border: solid #d9b988;
@@ -324,23 +321,27 @@ input:focus {
         .container {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            align-content: center;
             justify-content: center;
             text-align: center;
-            align-items: center;
-
+            max-width: 450px;
+            
         }
 
         .cofres img {
-            width: 80%;
+            width: 75%;
             padding: 1rem;
             
         }
         .cofres {
-            margin: 1.5rem;
+            
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            align-content: center;
             align-items: center;
+            margin-top: 2rem;
+    
             width: 250px;
             background: #d46419;
             border-radius: 10px;
@@ -349,7 +350,7 @@ input:focus {
         }
 
         .cofres a {
-            padding: 15px;
+            
             border-radius: 10px;
             border: solid 2px black;
             background:#5f0c0e;
@@ -439,7 +440,7 @@ input:focus {
 
      /** tablets**/
 
-     /**@media(max-width: 768px){
+     @media(max-width: 768px){
 
         .lg{margin: 5px;
             width: 100px;
@@ -630,18 +631,339 @@ input:focus {
             border-radius: 10px;
         }
 
-        .container {
+         .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+            max-width: 767px;
+            
+        }
+
+        .cofres img {
+            width: 75%;
+            padding: 1rem;
+            
+        }
+        .cofres {
+            
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+            width: 250px;
+            background: #d46419;
+            border-radius: 10px;
+            border: solid #d9b988;
+            box-shadow: 0 0 10px 5px rgb(0,0, 0, 1);
+        }
+
+        .cofres a {
+            padding: 15px;
+            border-radius: 10px;
+            border: solid 2px black;
+            background:#5f0c0e;
+            color: #d9b988;
+        }
+
+        .cofres span {
+            font-size: 40px;
+            padding: 1rem;
+            color: #d9b988;
+
+        }
+
+        .cofres p {
+            font-size: large;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+
+        .btn-comprar {
+            color: #d9b988;
+            cursor: pointer;
+            margin: 20px;
+               
+        }
+
+        .comunidad {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3rem;
+
+        }
+
+        .social {
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 30px;
+        }
+
+        
+        .contacto {
+            background-color: #5f0c0e;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 17rem;  
+        
+        }
+        .contacto a {  
+            color: #d9b988;
+            margin: 0.5rem 1rem 0; 
+
+        }
+        .contacto p {
+            color: #d9b988;
+            margin: 0.5rem 1rem 0;
+       
+        }
+
+        .lgfooter {
+            width: 100px;
+            height: 100px;
+            
+        }         
+
+     }
+     /**  media desktop **/
+
+     /*@media (min-width: 769px) {
+        header {
+            height: 150px;
+            display: flex;
+        }
+        .lg{
+            width: 150px;
+            height: 150px;
+        }
+
+        nav {
+            height: 150px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+           
+        }
+        .nav-menu {
+            display: flex;
+            color: red;
+            
+         
+            
+        }
+        .nav-menu li {
+            display: flex;
+            color: greenyellow;
+            align-content: right;
+            
+            margin: 20px 0;
+            
+        
+        }
+        
+        .nav-menu li a {
+            color: #d9b988;
+            text-transform: uppercase;
+            list-style: none;
+            text-decoration: none;
+            align-content: right;
+            font-size: large;
+            padding:1rem;
+        }
+
+        input {display: none;}
+
+        .btn-bar {display: none;}
+       
+            
+
+        
+        #check {
+            display: none;
+        }
+       
+
+        main {
+            min-width: 769px;
+            height: 100vh;
+           
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero_text{ 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 30px;
+            
+        }
+        
+        .hero_text p {
+           width: 760px;
+        }
+        
+        a{
+            text-decoration: none;
+            
+        }
+        
+        p{font-size: large;
+        font-weight: 900; 
+        }
+        
+        .botones_intro{
+            margin-top: 40px;
+            display: flex;
+            gap: 30px;
+        }
+        
+        .empezar {
+          
+            padding: 15px;
+            border-radius: 10px;
+            border: solid 2px black;
+            background:#5f0c0e;
+            color: #d9b988;    
+        
+        }
+
+        h3 { font-size: 40px;
+            padding: 1.5rem;
+            color: #d46419;
+            display: flex; 
+            align-items: center;   
+            justify-content: center;
+            text-align: center;
+            }
+
+        h4 {font-size: 30px;
+            padding: 1.5rem;
+           color: #d46419;
+
+        }
+
+        .vt {
+            padding: 1rem;
+            display: flex; 
+            align-items: center;   
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .elfo {
+            width: 700px;
+            height: auto;
+            border-radius: 10px;
+            border: solid #d9b988;
+
+         
+        }
+        .hero_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 20px 0;
+            width: 700px;
+        }
+
+        .eleccion {
+            margin-top: 8rem;
+        }
+        .clases { display: flex;
+        
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            }
+        
+        .lista_clases {
+            display: flex;
+            flex-direction: column;
+        }
+        .itemlista1 {
+            align-content: center;
+            justify-content: center;
+            margin-top: 30px;
+            text-align: center;
+            
+        }
+        .guerrero {
+            margin-top: 2rem;
+            height: 50%;
+            width: 40%;
+            border: solid #d9b988;
+            border-radius: 10px;
+            
+        }
+        
+        .mago {
+            margin-top: 2rem;
+            height: 50%;
+            width: 40%;
+            border: solid #d9b988;
+            border-radius: 10px;
+        
+        }
+        
+        .arquero {
+            margin-top: 2rem;
+            height: 50%;
+            width: 40%;
+            border: solid #d9b988;
+            border-radius: 10px;
+        }
+
+        .productos {
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
             align-items: center;
+            margin-top: 5rem 5rem;
+            
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            text-align: center;
+            align-items: center;
+            
+            
+            
 
         }
 
 
         .cofres img {
-            width: 80%;
+            width: 40%;
             padding: 1rem;
             
         }
@@ -733,7 +1055,7 @@ input:focus {
             width: 100px;
             height: 100px;
             
-        }          
+        }         
 
-
+        
      }
