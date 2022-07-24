@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0%;
     box-sizing: border-box;
-    border: 1px solid red;
+    
     
   
     }
@@ -15,18 +15,18 @@ body{
     text-decoration-line: none;  
     list-style: none;
     text-decoration-color: none;
+    max-width: 100%;
     
-   
-
-   
+  
     
     }
 
 header{
-        height: 100px;
+        height: 120px;
         width: 100%;
         display: flex;
         background-color: #5f0c0e;
+        max-width: 100%;
     
     }
 
@@ -41,12 +41,13 @@ footer{
         text-align: center;
         margin-top: 5rem;
         bottom:0;
-        color: aqua;
+        max-width: 100%;
       
     }
 
     .comunicacion {
-        width: 100%;  
+        width: 100%; 
+        max-width: 100%; 
     }
 
 
@@ -125,32 +126,36 @@ input:focus {
      @media (max-width: 480px) {
 
         body { max-width: 479px;}
-        header{ max-width: 479px;}
+        header{ max-width: 479px;
+            position: sticky;
+            top: 0%;
+            z-index: 99999}
 
         .lg{
-            width: 100px;
-            height: 100px;
+            width: 90px;
+            height: 90px;
         }
 
         nav {
-            height: 100px;
-            width: 100%;
+            
+            width: 100vh;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 479px;
+            flex-wrap: wrap;
+           
+            
         
         }
         .nav-menu {
-            position: fixed;
-            width: 100%;
-           height: 0vh;
-           top: 100px;        
+            
+            width: 100%;      
             text-align: center;
-            background: #5f0c0e;
-            transition: all .5;
             list-style: none;
-          
+            
+            
+            
+            
             
         }
         .nav-menu li {
@@ -158,8 +163,9 @@ input:focus {
             line-height: 40px;
             margin: 20px 0;
             transition: all .5s;
-            max-width: 450px;
-        
+            
+           
+ 
         }
         
         .nav-menu li a {
@@ -167,8 +173,10 @@ input:focus {
             text-transform: uppercase;
             list-style: none;
             text-decoration: none;
-            color: #d9b988;
             font-size: large;
+            
+          
+            
         }
         .btn-bar{
              color: #d9b988;
@@ -181,12 +189,20 @@ input:focus {
         }
         #check {
             display: none;
+            
         }
         #check:checked ~ .nav-menu{
-            height: 40vh;
+            height: 60vh;
+            background: #5f0c0e;
+            
+           
+           
         }
         #check:checked ~ .nav-menu li {
             display: block;
+           
+            
+           
         }
 
         main {
@@ -268,7 +284,7 @@ input:focus {
         }
 
         .elfo {
-            max-width: 380px;
+            max-width: 300px;
             height: auto;
             border-radius: 10px;
             border: solid #d9b988;
@@ -280,7 +296,7 @@ input:focus {
             justify-content: center;
             align-items: center;
             margin: 0 20px 0;
-            max-width: 380px;
+            max-width: 340px;
         }
         .clases { display: flex;
             max-width: 450px;
@@ -407,6 +423,7 @@ input:focus {
             justify-content: center;
             margin-bottom: 3rem;
             max-width: 450px;
+           
 
         }
 
@@ -465,6 +482,11 @@ input:focus {
      /** tablets**/
 
      @media(max-width: 768px){
+        header {
+            position: sticky;
+            top: 0%;
+            z-index: 99999
+        }
 
         .lg{margin: 5px;
             width: 100px;
@@ -473,22 +495,24 @@ input:focus {
 
         nav {
             height: 100px;
-            width: 100%;
+            width: 100vh;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-width: 100%;
 
             
            
         }
         .nav-menu {
-            position:fixed;
-            width: 100%;
+            position: fixed;
+            width: 100vh;
            height: 0vh;
            top:100px;
             text-align: center;
             background: #5f0c0e;
             list-style: none;
+            max-width: 100%;
             
         }
         .nav-menu li {
@@ -496,6 +520,7 @@ input:focus {
             line-height: 40px;
             margin: 20px 0;
             overflow: hidden;
+            max-width: 100%;
            
         
         }
@@ -507,6 +532,7 @@ input:focus {
             text-decoration: none;
             color: #d9b988;
             font-size: large;
+            max-width: 100%;
         }
         .btn-bar{
              color: #d9b988;
@@ -522,7 +548,8 @@ input:focus {
             display: none;
         }
         #check:checked ~ .nav-menu{
-            height: 40vh;
+            height: 60vh;
+            color: #5f0c0e;
         }
         #check:checked ~ .nav-menu li {
             display: block;
