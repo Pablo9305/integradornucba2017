@@ -6,7 +6,6 @@
     margin: 0%;
     box-sizing: border-box;
     
-    
   
     }
 body{
@@ -16,6 +15,8 @@ body{
     list-style: none;
     text-decoration-color: none;
     max-width: 100%;
+    background-image: url(/css/img/images.png)
+
     
   
     
@@ -52,71 +53,90 @@ footer{
 
 
 /* paginas de ingreso y registro**/
-
-.paginalogin {
-    background: black;
-}
-.login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
-}
-.imagenlogin {
+@media all {
+    .paginalogin {
+        background: black;
+        max-width: 1300px;
+    }
+    .login {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    .containerlogin{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .imagenlogin {
+        
+        max-width: 320px ;
+        max-height: 320px;
+        padding-top: 2rem;
     
-    max-width: 320px ;
-    max-height: 320px;
-    padding-top: 2rem;
-
-}
-
-.ingresar {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    color:#d9b988
-}
-
-.titulologin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:#d9b988
-   
-}
-
-input{
-    border-radius: 5px;
-    border: solid 3px #d9b988;
-    height: 2rem;
-    margin: 0px 1rem 0px;
-    text-align: center;
-    background-color: silver;
-}
-
-input:focus {
-    outline: none;
-}
-
-.login-btn { 
-    background: #5f0c0e;
-    color: #d9b988;
-    height: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-family: 'MedievalSharp', cursive;
-    cursor: pointer;
+    }
+    
+    .ingresar {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        color:#d9b988
+    }
+    
+    .titulologin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:#d9b988
+       
+    }
+    
+    input{
+        border-radius: 5px;
+        border: solid 3px #d9b988;
+        height: 2rem;
+        margin: 0px 1rem 0px;
+        text-align: center;
+        background-color: silver;
+    }
+    
+    input:focus {
+        outline: none;
+    }
+    .entradadatos {
+        border-radius: 5px;
+        border: solid 3px #d9b988;
+        height: 2rem;
+        margin: 0px 1rem 0px;
+        text-align: center;
+        background-color: silver;
+    }
+    
+    .login-btn { 
+        background: #5f0c0e;
+        color: #d9b988;
+        height: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-family: 'MedievalSharp', cursive;
+        cursor: pointer;
+        
+        
+    }
+    
+    .olvido {
+        text-decoration: none;
+        color: #d9b988;
+        margin-bottom: 3rem;
+    
+    }
     
     
-}
-
-.olvido {
-    text-decoration: none;
-    color: #d9b988;
-    margin-bottom: 3rem;
-
 }
 
 
@@ -125,7 +145,8 @@ input:focus {
 
      @media (max-width: 480px) {
 
-        body { max-width: 479px;}
+        body { max-width: 479px;
+            background-image: url(/css/img/images.png);}
         header{ max-width: 479px;
             position: sticky;
             top: 0%;
@@ -143,6 +164,7 @@ input:focus {
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            background: #5f0c0e;
            
             
         
@@ -152,6 +174,7 @@ input:focus {
             width: 100%;      
             text-align: center;
             list-style: none;
+            background: #5f0c0e;
             
             
             
@@ -798,7 +821,8 @@ input:focus {
             width: 100px;
             height: 100px;
             
-        }         
+        }   
+              
 
      }
      /**  media desktop **/
@@ -849,7 +873,7 @@ input:focus {
             padding:1rem;
         }
 
-        input {display: none;}
+        
 
         .btn-bar {display: none;}
        
@@ -1117,7 +1141,10 @@ input:focus {
             width: 100px;
             height: 100px;
             
-        }         
+        }  
+               
+        
+        
 
         
      }
